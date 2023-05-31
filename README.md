@@ -5,6 +5,7 @@ Fast polynomial multiplication
 Time Complexity = O(nlogn) where n os the degree of the polynomial 
 
 PYTHON CODE:
+
 **import math
 import cmath 
 import numpy as np
@@ -43,11 +44,6 @@ def FFT(polynomial):
         y[j]=ye[j]+yo[j]*(pow(w,j))
         y[j+int(n/2)]=ye[j]-yo[j]*(pow(w,j))
     return(y)
-
-
-
-
-
 if __name__=='__main__':
     n=[]
     n=list(map(int,input("Enter the coeffecients in increasing order of degree: ").strip().split()))
