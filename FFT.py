@@ -4,7 +4,7 @@ import cmath
 import numpy as np
 from cmath import exp, pi
 
-def nthRootsOfUnity(n): 
+def nthRootsOfUnity(n): #Calculates nth root of unity
     theta = math.pi * 2 / n
     real = math.cos(theta)
     img = math.sin(theta)
@@ -18,17 +18,18 @@ def FFT(polynomial):
         return polynomial
     
     w=nthRootsOfUnity(n)
-    pe=[]
+    pe=[] #stores the even poers of the polynomial
     for j in range(0,int(n/2)):
         {
             pe.append(polynomial[2*j])
         }
-    po=[]
+    po=[] #stores the odd powers of the polynomial
     for j in range(0,int(n/2)):
         {
             po.append(polynomial[2*j+1])
         }
-    ye=FFT(pe)
+        #recursively traverse till you get degree-0 polynomials
+    ye=FFT(pe) 
     yo=FFT(po)
 
     y=[0]*n
@@ -37,6 +38,7 @@ def FFT(polynomial):
         y[j]=ye[j]+yo[j]*(pow(w,j))
         y[j+int(n/2)]=ye[j]-yo[j]*(pow(w,j))
     return(y)
+
 if __name__=='__main__':
     n=[]
     n=list(map(int,input("Enter the coeffecients in increasing order of degree: ").strip().split()))
@@ -49,4 +51,3 @@ if __name__=='__main__':
     print(n)
     y=FFT(n)
     print(y)**
-
