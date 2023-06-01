@@ -42,7 +42,7 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 >Time Complexity = O(nlogn) where n is the degree of the polynomial 
 
 #### PYTHON CODE:
-Inverse_Transform.py
+[Inverse_Transform.py](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/blob/main/Inverse_Transform.py)
 ### Steps:
 > Just 2 minor changes to the Forward Transform and we get the Inverse transform.
 > 1)Here we will be using the inverse of the nth roots of unity.
