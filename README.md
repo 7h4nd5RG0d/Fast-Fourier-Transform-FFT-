@@ -1,4 +1,4 @@
-# Fast-Fourier-Transform-(FFT)
+# Fast-Fourier-Transform(FFT)
 Fast polynomial multiplication **for polynmials with degree greater than 2 (degree 1 and 0 can be considered trivial for our case)**
 
 # What is FFT:
@@ -28,7 +28,13 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 
    
 # 2)Point wise multiplication of the polynomials:
-> Now that we have got the n points of interest of both the polynomials the question arises how to multiply them to get just a single set of n points that represents the final polynomial
+>Time Complexity = O(n) where n is the degree of the polynomial as we need to multiply only (n+1) points together
+
+#### PYTHON CODE:
+
+
+### Explanation
+> Now that we have got the (n+1) points of interest of both the polynomials the question arises how to multiply them to get just a single set of n points that represents the final polynomial
 > This is done through pointwise multiplication.     
 >**Note:- if one of the polynomials has degree m and the other has degree n, then they give a polynomial of degree m*n on multiplication. We can state that if we have (m*n+1) distinct points, the resultant polynomial can be uniquely determined.**
 
