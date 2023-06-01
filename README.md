@@ -10,7 +10,7 @@ The following steps illustrate FFT:-
 > Time Complexity = O(nlogn) where n is the degree of the polynomial 
 
 #### PYTHON CODE:
-Forward_Transform.py
+[Forward_Transform.py](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/blob/main/Foward_Transform.py)
 
 ### Explanation:
 > In forward transform we are finding the value of the polynomial at n points. This under usual circumstances takes O(n^2) time but we have an efficient way to do it.
