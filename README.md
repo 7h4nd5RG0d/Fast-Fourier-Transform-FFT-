@@ -77,5 +77,5 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 ![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/03d9d978-a5e9-40b9-b43c-f36aecd8d0e4)
 
 
->>**Wow. Just look at the difference of time there, and this is just for a degree 5 resultant polynomial. Consider the case when we use it for Dilithium and Khyber where larger polynomials.  
->>I guess that's why it was the most ingenious algorithm of the last century**
+>>**Wow. Just look at the difference of time there, and this is just for a degree 5 resultant polynomial. Consider the case when we use it for Dilithium and Khyber where larger polynomials are used.  
+>>Well,that's why it was the most ingenious algorithm of the last century**
