@@ -72,7 +72,7 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 
 ![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/a1d083c0-8f5e-4176-901b-7360905630ff)
 
->>**Using the schoolbook algo given**
+>>**Using the schoolbook algo given** 
 >>https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/blob/main/Schoolbook_algo.py
 ![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/03d9d978-a5e9-40b9-b43c-f36aecd8d0e4)
 
