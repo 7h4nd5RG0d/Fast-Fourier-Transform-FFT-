@@ -78,4 +78,4 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 
 
 >>**Wow. Just look at the difference of time there, and this is just for a degree 5 resultant polynomial. Consider the case when we use it for Dilithium and Khyber where larger polynomials.  
->>I guess that's why it is the most ingenious algorithm of all time**
+>>I guess that's why it wass the most ingenious algorithm of the last century**
