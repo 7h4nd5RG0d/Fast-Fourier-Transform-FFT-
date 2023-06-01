@@ -2,7 +2,7 @@
 Fast polynomial multiplication **for polynmials with degree greater than 2 (degree 1 and 0 can be considered trivial for our case)**
 
 # What is FFT:
-> FFT is an algorithm for fast polynomial multiplication. The usual polynomial multiplication takes a complexity of O(n^2) while FFT takes a complexity of O(nlogn).
+> FFT is an algorithm for fast polynomial multiplication. The usual polynomial multiplication takes a complexity of O(n^2) while FFT takes a complexity of O(nlogn) {which is a huge relief when considering large polynomials}.
 The following steps illustrate FFT:-
 
 
@@ -14,10 +14,12 @@ The following steps illustrate FFT:-
 
 ### Explanation:
 > In forward transform we are finding the value of the polynomial at n points. This under usual circumstances takes O(n^2) time but we have an efficient way to do it.
+> Why does it take O(n^2) time, well since we have n computations for each point.
 ### Steps:
 > 1)Take the polynomial and split it into 2 polynomials having even and odd degree terms.  
 > 2)Calculate the nth root of unity as we will be calculating the value of the polynomial at the nth roots of unity(it gives us totally n points as we wanted)    
 > 3)Now recursively follow the above 2 steps till you get degree 0 polynomials.     
+> 4)The main reason why we are using roots of unity is because that it is anti-periodic with a period of pi.(see the code for better understanding on where does this property come to play)
 
 ### Time complexity explanation:
 > Since we are traversing down the polynomial until we get degree 0 terms this takes a time complexity of O(logn)     
@@ -64,7 +66,7 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 # Is it really faster
 
 >Let us take an example to compare it with the schoolbook algorithm:
->Consider m= (5 + 10x^2 + 6x^3)  and n= (1 +2x + 4x^2)
+>Consider our first polynomial to be m= (5 + 10x^2 + 6x^3)  and second polynomial to be n= (1 +2x + 4x^2)
 
 
 >>**Using the FFT algo gven:-**
@@ -79,3 +81,5 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 
 >>**Wow. Just look at the difference of time there, and this is just for a degree 5 resultant polynomial. Consider the case when we use it for Dilithium and Khyber where larger polynomials are used.  
 >>Well,that's why it was the most ingenious algorithm of the last century**
+
+# This may be one of the reasons why AES may be broken in post-quantum world...
