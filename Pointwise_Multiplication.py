@@ -66,7 +66,7 @@ if __name__=='__main__':
     print("The coeffecients of the entered polynomial 2 with number of terms in power of 2: ",m)
 
     y=FFT(n)  #calling the forward transform
-    z=FFT(n)  #calling the forward transform
+    z=FFT(m)  #calling the forward transform
     #######################################################################################################
     j=0 # this is a precision function as roots of unity can be irrational also
     for img in y:
