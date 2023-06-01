@@ -43,4 +43,39 @@ Pointwise_Multiplication.py
 
 #### PYTHON CODE:
 Inverse_Transform.py
+### Steps:
+> Just 2 minor changes to the Forward Transform and we get the Inverse transform.
+> 1)Here we will be using the inverse of the nth roots of unity.
+> 2) Finally in the last step we have to divide by 1/n which is the determinant of the DFT matrix.
 
+# Overall Time Complexity
+> The overall time complexity= O(nlogn) + O(n) + O(nlogn) = O(nlogn) <<<<<<< O(n^2) 
+
+# The DFT matrix and its inverse:
+### DFT:
+![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/d3568da8-7b28-4cf4-8b96-836fb970d0d2)
+
+### IDFT:
+![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/2d3daad5-5c05-492a-8888-008362b23c76)
+
+> Note that 1)theta to change thetanally we divide by n
+
+
+# Is it really faster
+
+>Let us take an example to compare it with the schoolbook algorithm:
+>Consider m= (5 + 10x^2 + 6x^3)  and n= (1 +2x + 4x^2)
+
+
+>>**Using the FFT algo gven:-**
+
+
+![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/a1d083c0-8f5e-4176-901b-7360905630ff)
+
+>>**Using the schoolbook algo given**
+>>
+![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/03d9d978-a5e9-40b9-b43c-f36aecd8d0e4)
+
+
+>>**Wow. Just look at the difference of time there, and this is just for a degree 5 resultant polynomial. Consider the case when we use it for Dilithium and Khyber where larger polynomials.  
+>>I guess that's why it is the most ingenious algorithm of all time**
