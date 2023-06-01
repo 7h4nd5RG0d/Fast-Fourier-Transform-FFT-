@@ -60,7 +60,7 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 ### IDFT:
 ![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/2d3daad5-5c05-492a-8888-008362b23c76)
 
-> Note that 1)theta to -(theta) and  2)we divide by n 
+> Note that there are 2 differences 1)theta is changed to -(theta) for every block and  2)we divide by n 
 
 
 # Is it really faster
