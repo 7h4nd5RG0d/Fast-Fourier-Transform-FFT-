@@ -31,7 +31,7 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 >Time Complexity = O(n) where n is the degree of the polynomial as we need to multiply only (n+1) points together
 
 #### PYTHON CODE:
-Pointwise_Multiplication.py
+[Pointwise_Multiplication.py](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/blob/main/Pointwise_Multiplication.py)
 
 ### Explanation
 > Now that we have got the (n+1) points of interest of both the polynomials the question arises how to multiply them to get just a single set of n points that represents the final polynomial
