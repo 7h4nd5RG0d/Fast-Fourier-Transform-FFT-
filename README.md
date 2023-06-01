@@ -6,11 +6,11 @@ Fast polynomial multiplication **for polynmials with degree greater than 2 (degr
 The following steps illustrate FFT:-
 
 
-# 1)The forward transform:
+# 1)The Forward Transform:
 > Time Complexity = O(nlogn) where n is the degree of the polynomial 
 
 #### PYTHON CODE:
-There in FFT.py
+Forward_Transform.py
 
 ### Explanation:
 > In forward transform we are finding the value of the polynomial at n points. This under usual circumstances takes O(n^2) time but we have an efficient way to do it.
@@ -31,10 +31,16 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 >Time Complexity = O(n) where n is the degree of the polynomial as we need to multiply only (n+1) points together
 
 #### PYTHON CODE:
-
+Pointwise_Multiplication.py
 
 ### Explanation
 > Now that we have got the (n+1) points of interest of both the polynomials the question arises how to multiply them to get just a single set of n points that represents the final polynomial
 > This is done through pointwise multiplication.     
 >**Note:- if one of the polynomials has degree m and the other has degree n, then they give a polynomial of degree m*n on multiplication. We can state that if we have (m*n+1) distinct points, the resultant polynomial can be uniquely determined.**
+
+# 3)The Inverse Transform:
+>Time Complexity = O(nlogn) where n is the degree of the polynomial 
+
+#### PYTHON CODE:
+Inverse_Transform.py
 
