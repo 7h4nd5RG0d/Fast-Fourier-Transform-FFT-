@@ -51,14 +51,14 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 # Overall Time Complexity
 > The overall time complexity= O(nlogn) + O(n) + O(nlogn) = O(nlogn) <<<<<<< O(n^2) 
 
-# The DFT matrix and its inverse:
+## The DFT matrix and its inverse:
 ### DFT:
 ![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/d3568da8-7b28-4cf4-8b96-836fb970d0d2)
 
 ### IDFT:
 ![image](https://github.com/7h4nd5RG0d/Fast-Fourier-Transform-FFT-/assets/128285431/2d3daad5-5c05-492a-8888-008362b23c76)
 
-> Note that 1)theta to change thetanally we divide by n
+> Note that 1)theta to -(theta) and  2)we divide by n 
 
 
 # Is it really faster
@@ -78,4 +78,4 @@ Once we have the degree-0 polynomials we have to just calculate the value at the
 
 
 >>**Wow. Just look at the difference of time there, and this is just for a degree 5 resultant polynomial. Consider the case when we use it for Dilithium and Khyber where larger polynomials.  
->>I guess that's why it wass the most ingenious algorithm of the last century**
+>>I guess that's why it was the most ingenious algorithm of the last century**
